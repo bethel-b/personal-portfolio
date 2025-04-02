@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+#navbar a {
+    
+    color: aqua;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    color: rgb(226, 253, 179);
+}
+.logo{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+}
+#welcome-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */  
+}
+.background-container {
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+.pp{
+    border-radius: 50%; /* Circular photo */
+    width: 250px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    
+}
+.intro {
+    display: flex; /* Enable Flexbox for the intro section */
+    align-items: center; /* Center items vertically */
+}
+.text {
+    max-width: 600px; /* Limit the width of the text */
+}
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0; /* Spacing around heading */
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger text */
+    line-height: 1.5; /* Improve readability */
+}
+#projects{
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+ 
+}
+
+.project {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 300px; /* Set width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px; /* Spacing below the title */
+}
+
+.project-info p {
+    margin: 0 0 10px; /* Spacing below the description */
+}
+
+.project-info a {
+    display: inline-block;
+    margin-right: 10px; /* Space between links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.project-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 15px; /* Space between social links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input, textarea {
+    margin-bottom: 15px; /* Space below input fields */
+    padding: 10px; /* Padding inside fields */
+    border: 1px solid #ccc; /* Border for fields */
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
