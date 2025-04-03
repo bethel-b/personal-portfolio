@@ -5,35 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bethelhem kefeni portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar">
-        <div class="logo">BETTY</div>
-        <a href="#welcome-section">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a id="profile-link" href="https://github.com/yourprofile" target="_blank">GitHub Profile</a>
+    <nav class="navbar">
+        <ul>
+            <div class="logo">
+                <h1>Betty</h1>
+            </div>
+            <li><a href="#welcome-section" class="nav-link">Home</a></li>
+            <li><a href="#projects" class="nav-link">projects</a></li>
+            <li><a href="#contact" class="nav-link">contact</a></li>
+            <li><a href="https://github.com/yourprofile" target="_blank" class="nav-link">GitHub Profile</a></li>
+             
+        </ul>
     </nav>
-
-    <section id="welcome-section">
-        <section id="hero" class="hero section dark-background">
-
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-      
-          </section>
-          <div class="background-container"><img class="background" src="images/Free Photo _ Crop hands using laptop and drawing draft.jpg" alt=""></div>   
-    <div class="intro">
-        
-        <img class="pp" src="images/profile.jpg" alt="">
-        <div class="text">
-        <h1>Hello, I'm Bethelhem</h1>
-        <p>I am a passionate web developer with a focus on creating interactive and user-friendly web applications. With a background in both design and programming, I strive to build solutions that not only function well but also provide a great user experience. Let's connect and create something amazing together!</p>
-    </div>
-    </div>
+    
+    <section id="welcome-section"><img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class=""> 
+        <div class="intro">
+            <img class="pp" src="images/profile.jpg" alt="">
+            <div class="text">
+                <h1>🌟 Hello! I'm <strong>Bethelhem</strong>,</h1>
+                <p class="description">
+                     a passionate <em>Software Engineering student</em> dedicated to the art of web development.💻 
+                    <p>🚀 My journey in tech fuels my desire to innovate and build experiences that inspire.</p>
+            </div>
+            <div class="social-media">
+                <a href="#">Join me !</a>
+                <a href="https://github.com/bethel b" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+    <section id="projects"><h2>My Projects</h2>
         <div class="project">
             <img src="images/projectsample.png" alt="Project 1 Screenshot">
             <div class="project-info">
@@ -52,8 +68,7 @@
                 <a href="https://github.com/username/project2" target="_blank">View Source Code</a>
             </div>
         </div>
-        <!-- Add more projects as needed -->
-    </section>
+        <!-- Add more projects as needed --></section>
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -84,7 +99,32 @@
 
     <footer>
   
+        <script>
+            // Get all sections and nav links
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
         
+            // Function to change active nav link
+            function changeActiveLink() {
+                let scrollPos = window.scrollY; // Get current scroll position
+        
+                sections.forEach((section, index) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+        
+                    // Check if current section is in viewport
+                    if (scrollPos >= sectionTop - sectionHeight / 2 && scrollPos < sectionTop + sectionHeight / 2) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active'); // Remove active class from all links
+                        });
+                        navLinks[index].classList.add('active'); // Add active class to the current link
+                    }
+                });
+            }
+        
+            // Event listener for scrolling
+            window.addEventListener('scroll', changeActiveLink);
+        </script>
     </footer>
 </body>
 </html>
