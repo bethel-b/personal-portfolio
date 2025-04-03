@@ -121,7 +121,7 @@ p {
 .social-media {
     text-align: center; /* Centers the content inside */
     position: relative;
-    top: 220px;
+    top: 120px;
     display: inline-flex; /* Use inline-flex to align the icons in a row */
     justify-content: space-between;
 }
@@ -145,7 +145,7 @@ p {
     transform: scale(1.2); /* Scale up on hover */
     color: #f0f0f0; /* Change color on hover */
 }
-#projects {
+.projects {
     padding: 20px;
     background-color: #f9f9f9; /* Light background for contrast */
 }
@@ -181,7 +181,9 @@ p {
     color: #555;             /* Slightly lighter for clarity */
     display: none;      /* Initially hide the description */
 }
-
+.project-info p.active {
+    display: block; /* Show active description */
+}
 .project-info a {
     display: inline-block;    /* Block display for better spacing */
     margin-right: 10px;      /* Space between links */
@@ -198,6 +200,8 @@ p {
 #contact {
     padding: 20px;
     background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .contact-info {
@@ -207,10 +211,7 @@ p {
 .contact-info p {
     margin: 0;
 }
-.social-media{
-    position: relative;
-    top: 90px;
-}
+
 .social-links {
     margin-top: 10px;
 }
@@ -239,6 +240,11 @@ input, textarea {
     padding: 10px; /* Padding inside fields */
     border: 1px solid #ccc; /* Border for fields */
     border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
 }
 
 button {
@@ -248,19 +254,21 @@ button {
     border: none; /* No border */
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
 button:hover {
     background-color: #0056b3; /* Darker on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+/* Form message styling */
+.form-message {
+    margin-top: 15px;
+    color: green; /* Success message color */
+    font-weight: bold; /* Bold text */
 }
 
+/* Media query for responsiveness */
 @media (max-width: 600px) {
     #navbar {
         flex-direction: column;
