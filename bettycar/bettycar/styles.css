@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Car Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">🚗 Betty Car</h1>
+            <div>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#booking" class="nav-link">Book Now</a>
+                <a href="#signup" class="nav-link">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="hero">
+        <div class="info-booking">
+            <h2>Find Your Best Car</h2>
+            <h3>And Book Easily</h3>
+            <div class="booking-form">
+                <input type="text" placeholder="Location">
+                <input type="date" placeholder="Pick Up Date">
+                <input type="date" placeholder="Return Date">
+                <button>Book Now</button>
+            </div>
+            <div class="statistics">
+                <p>25,000+ Customers</p>
+                <p>24/7 Support</p>
+            </div>
+        </div>
+    </div>
+
+#about {
+    padding: 60px;
+    background: rgba(234, 83, 83, 0.8);
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 10px;
+}
+
+.see-more {
+    background: #e63946;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.see-more:hover {
+    background: #d62839;
+}
+
+.testimonials {
+    padding: 60px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: none;
+    margin: 20px 0;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.next-btn {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.next-btn:hover {
+    background-color: #d62839;
+}
+
+#phero {
+    padding: 60px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-form input {
+    padding: 10px;
+    border: 1px solid #e63946;
+    border-radius: 5px;
+}
+
+.search-form button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #d62839;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+#signup-container {
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #e63946;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #d62839;
+}

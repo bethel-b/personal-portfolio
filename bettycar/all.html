@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Car Booking</title>
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+                <span class="logo-icon">🚗</span> Betty Car
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#phero">Purchase</a></li>
+                    <li><a href="#signup-container">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <img src="images/car for home page bg.png" alt="Car" class="hero-image">
+            <div class="info-booking">
+                <div class="info">
+                    <h2>Find Your Best Car</h2>
+                    <h3>And Book Easily</h3>
+                </div>
+                <div class="booking-form">
+                    <input type="text" placeholder="Location">
+                    <input type="date" placeholder="Pick Up Date">
+                    <input type="date" placeholder="Return Date">
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="statistics">
+                <p>25,000+ Customers</p>
+                <p>24/7 Support</p>
+            </div>
+        </div>
+        <footer>
+            <a href="#"><p> Terms of Service | Privacy Policy</p> </a>
+                <div class="social-icons">
+                    <p >Follow Us</p>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        </footer>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Betty Car Rental, we are dedicated to providing you with a seamless and enjoyable car rental experience. With a diverse fleet of well-maintained vehicles, we cater to all your travel needs—whether you're planning a weekend getaway, a business trip, or a family vacation.</p>
+            <a href="#" class="see-more">See More</a>
+        </section>
+    
+        <section class="success-numbers">
+            <h2>Our Success Numbers</h2>
+            <div class="numbers">
+                <div class="number-item">
+                    <i class="fas fa-car"></i> <!-- Car icon -->
+                    <h3>6,500</h3>
+                    <p>Total vehicles served</p>
+                </div>
+                <div class="number-item">
+                    <i class="fas fa-star"></i> <!-- Star icon -->
+                    <h3>1,000</h3>
+                    <p>Average star review</p>
+                </div>
+                <div class="number-item">
+                    <i class="fas fa-users"></i> <!-- Person icon -->
+                    <h3>25,000</h3>
+                    <p>Number of clients served</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="images/testimonial1.png" alt="Client 1">
+                    <p>"Betty Car provided an exceptional service! Highly recommend!"</p>
+                    <span>- Happy Customer 1</span>
+                </div>
+                <div class="testimonial">
+                    <img src="images/testimonial2.png" alt="Client 2">
+                    <p>"Great experience! The car was in pristine condition."</p>
+                    <span>- Happy Customer 2</span>
+                </div>
+                <div class="testimonial">
+                    <img src="images/testimonial3.png" alt="Client 3">
+                    <p>"Customer service was top-notch! Will use again."</p>
+                    <span>- Happy Customer 3</span>
+                </div>
+                <div class="testimonial">
+                    <img src="images/testimonial4.png" alt="Client 4">
+                    <p>"Efficient and reliable service. Highly satisfied!"</p>
+                    <span>- Happy Customer 4</span>
+                </div>
+            </div>
+            <button class="next-btn">Next</button>
+        </section>
+        
+        <script>
+            const testimonialsContainer = document.querySelector('.testimonial-container');
+            const nextButton = document.querySelector('.next-btn');
+        
+            nextButton.addEventListener('click', () => {
+                testimonialsContainer.scrollBy({
+                    top: 0,
+                    left: 300, // Amount to scroll to the right
+                    behavior: 'smooth'
+                });
+            });
+            const testimonials = [
+    {
+        text: '"Betty Car provided an exceptional service! Highly recommend!"',
+        customer: "- Happy Customer 1",
+        img: "images/testimonial1.png"
+    },
+    // ... additional testimonials
+];
+
+let currentTestimonialIndex = 0;
+
+nextButton.addEventListener('click', () => {
+    currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+    const currentTestimonial = testimonials[currentTestimonialIndex];
+    testimonialsContainer.innerHTML = `
+      <img src="${currentTestimonial.img}" alt="Client ${currentTestimonialIndex + 1}">
+      <p>${currentTestimonial.text}</p>
+      <span>${currentTestimonial.customer}</span>
+    `;
+});
+        </script>
+    
+        <footer cass="ft">
+            <p>© 2023 Betty Car Rental. All rights reserved.</p>
+        </footer>
+
+        <section id="phero">
+            <h2>Book Your Car</h2>
+            <h3>Easy And Fast</h3>
+            <p>Whether You're Planning A Weekend Getaway, A Business Trip, Or Just Need A Reliable Vehicle For Your Daily Commute, We Have A Wide Selection Of Cars To Suit Your Needs.</p>
+            <form class="search-form">
+                <input type="text" placeholder="Search for cars..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="car-gallery">
+            <h2>Available Cars</h2>
+            <div class="car-item">
+                <img src="images/mecedes.png" alt="Mercedes AMG">
+                <h4>Mercedes AMG</h4>
+                <p>Price: $120/day</p>
+                <p>Rating: <span class="star-rating">⭐⭐⭐⭐⭐</span></p>
+            </div>
+            <div class="car-item">
+                <img src="images/car.png" alt="Toyota Supra">
+                <h4>Toyota Supra</h4>
+                <p>Price: $100/day</p>
+                <p>Rating: <span class="star-rating">⭐⭐⭐⭐</span></p>
+            </div>
+            <div class="car-item">
+                <img src="images/mecedes.png" alt="Tesla Model 3">
+                <h4>Tesla Model 3</h4>
+                <p>Price: $150/day</p>
+                <p>Rating: <span class="star-rating">⭐⭐⭐⭐⭐</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Call Us For More Info: <strong>+251-966-111-222</strong></p>
+    </footer>
+
+    <div id="signup-container">
+        <div class="signup-form">
+            <h2>Create Your Account</h2>
+            <form>
+                <input type="text" placeholder="Enter Your Username" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="tel" placeholder="Enter Your Phone Number" required>
+                <input type="password" placeholder="Enter Your Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="social-login">
+                <button class="facebook-btn">
+                    <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                </button>
+                <button class="google-btn">
+                    <i class="fab fa-google"></i> Sign up with Google
+                </button>
+            </div>
+            <p>Already have an account? <a href="#">Login</a></p>
+        </div>
+        <div class="signup-image">
+            <img src="images/car.png" alt="Car Image">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Call Us For More Info: <strong>+251-966-11-2184</strong></p>
+</footer>
+    </div>
+    </div>

@@ -1,0 +1,522 @@
+
+button:hover {
+    background-color: #ff4d4d; 
+    transform: scale(1.05);
+}
+
+/* Star rating styles */
+.star-rating {
+    color: gold; /* Color for rating stars */
+    font-size: 18px; /* Size for star rating */
+}
+
+/* Add styles for car gallery */
+.car-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.car-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    transition: transform 0.2s;
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #003366, #336699);
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    position: fixed;  /* Fix header to the top */
+    top: 0;
+    width: 100%;
+    background-color:rgba(17, 17, 17, 1); /* Slightly transparent background */
+    z-index: 1000; /* Ensure it is above other content */
+
+}
+
+.logo {
+    color: #ff0000; /* Distinct color for the logo */
+    font-size: 25px; /* Increased font size */
+    font-family: 'Poppins', sans-serif; /* Example of a modern font */
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px; /* Size of the icon */
+    margin-right: 10px; /* Space between icon and text */
+    animation: bounce 3s infinite; /* Simple animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 4px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav li {
+    position: relative;
+    margin-right: 45px;
+}
+
+nav li:hover a {
+    color: #ff0000;; /* Change text color on hover */
+}
+nav li:active a {
+    color: #2b00ff;; /* Change text color on hover */
+}
+#hero {
+    background: linear-gradient(to right, #111, #444);
+    padding: 50px 20px 60px; /* Adjusted padding for fixed header */
+    text-align: center;
+    position: relative;
+    margin-top: 90px;
+}
+
+.hero-image {
+    width: 80%;
+    height: auto;
+    margin-top: -95px;
+}
+
+.info {
+    position: relative;
+    z-index: 2;
+}
+.info-booking{
+    margin-top: -120px;
+}
+.info h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.booking-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 10px 20px;
+    background-color: #ff0000;;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.statistics {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px 0;
+    background-color: #222;
+}
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Space between icons */
+        margin-top: 10px;
+    }
+    
+    .social-icon {
+        color: #fff; /* Icon color */
+        font-size: 20px; /* Icon size */
+        transition: color 0.3s;
+    }
+    
+    .social-icon:hover {
+        color: #ff0000;; /* Change color on hover */
+    }
+    
+    #about {
+        text-align: contain;
+        padding: 60px 20px;
+        background: url('images/background\ for\ about\ page.png') no-repeat center center ; /* Add your background image */
+        background-size: contain;
+        margin-top: 40px;
+        
+    }
+    #about h2{
+        font-size: large;
+        font-weight: 900;
+        
+    }
+    #about p{
+        font-weight: 300;
+        font-size: medium;
+    }
+    .number-item {
+        background-color: #444;
+        padding: 20px;
+        border-radius: 10px;
+        width: 150px;
+        text-align: center; /* Center content */
+    }
+    
+    .number-item i {
+        font-size: 40px; /* Icon size */
+        color: #ff0000;; /* Icon color */
+        margin-bottom: 10px; /* Space between icon and text */
+    }
+    
+    .number-item h3 {
+        font-size: 28px;
+        margin: 0;
+    }
+    .success-numbers {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+    }
+    
+    .testimonials {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
+    }
+    
+   
+    
+    
+    
+    .see-more {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ff0000;;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .success-numbers {
+        text-align: center;
+        padding: 60px 20px;
+    }
+    
+    .success-numbers h2 {
+        font-size: 36px;
+    }
+    
+    .numbers {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .number-item {
+        background-color: #444;
+        padding: 20px;
+        border-radius: 10px;
+        width: 150px;
+    }
+    
+    .number-item h3 {
+        font-size: 28px;
+        margin: 0;
+    }
+    
+    .testimonials {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #222;
+    }
+    
+    .testimonials h2 {
+        font-size: 36px;
+    }
+    
+    .testimonial {
+        margin-top: 20px;
+        font-style: italic;
+        font-family:Haettenschweiler, sans-serif;
+        font-weight: lighter;
+        font-size: medium;
+    }
+    .testimonials {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #222;
+    }
+    
+    .testimonial-container {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        gap: 20px; /* Space between testimonials */
+        padding: 20px; /* Padding around testimonials */
+    }
+    
+    .testimonial {
+        background-color: #444;
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 300px; /* Minimum width for each testimonial */
+        scroll-snap-align: start; /* Snap to the start of each testimonial */
+        text-align: left; /* Align text to the left */
+    }
+    
+    .testimonial img {
+        width: 60px; /* Image size */
+        height: 60px; /* Image size */
+        border-radius: 50%; /* Round image */
+        margin-bottom: 10px; /* Space between image and text */
+        margin-left: 90px;
+    }
+    
+    .next-btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ff0000;;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .ft {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        font-family:sans-serif;
+        font-weight: light;
+        font-size: small;
+    }
+    #about {
+        text-align: center;
+        padding: 60px 20px;
+        background-color: #333;
+    }
+    
+    .about h2 {
+        font-size: 36px;
+    }
+    
+    .about p {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+
+    #phero {
+        padding: 50px 20px 60px; /* Adjusted padding for fixed header */
+        text-align: center;
+        position: relative;
+        margin-top: 90px;
+        background-color: #b02929;;
+    }
+    
+    #phero h2 {
+        font-size: 36px;
+    }
+    
+    #phero h3 {
+        font-size: 28px;
+    }
+    
+    #phero p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    
+    .search-form {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .search-form input {
+        padding: 10px;
+        width: 300px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .search-form button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #282c34;
+        color: #ffffff;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .car-gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    
+    .car-item {
+        background-color: #282c34;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        margin: 10px;
+        width: 200px; /* Adjust as needed */
+    }
+    
+    .car-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #282c34;
+    }
+
+    #signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 20px; /* Space between form and image */
+    }
+    
+    .signup-form {
+        background-color: #282c34;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    }
+    
+    .signup-form h2 {
+        margin-bottom: 20px;
+    }
+    
+    .signup-form input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #3a3f47; /* Dark input background */
+        color: #ffffff; /* White text */
+    }
+    
+    .signup-form button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #7a2222; /* Button color */
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .signup-form button:hover {
+        background-color: #ff0000; /* Darker shade on hover */
+    }
+    
+    .social-login {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .facebook-btn, .google-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+    
+    .facebook-btn {
+        background-color: #3b5998; /* Facebook color */
+    }
+    
+    .google-btn {
+        background-color: #a13232; /* Google color */
+    }
+    
+    .signup-image {
+        max-width: 400px; /* Adjust as needed */
+    }
+    
+    .signup-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #282c34;
+    }
